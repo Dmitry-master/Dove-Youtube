@@ -1,0 +1,174 @@
+/* line 1, ../../dev/scss/reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 12, ../../dev/scss/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 16, ../../dev/scss/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 20, ../../dev/scss/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../dev/scss/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../../dev/scss/reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 36, ../../dev/scss/reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 42, ../../dev/scss/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../../dev/scss/layout.scss */
+body {
+  background: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* line 8, ../../dev/scss/layout.scss */
+#mainarea {
+  max-width: 1067px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding: 4.250em 98px 0;
+}
+
+/* line 16, ../../dev/scss/layout.scss */
+#content_fone {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* line 24, ../../dev/scss/layout.scss */
+#content {
+  margin: 0 1%;
+}
+
+/* line 28, ../../dev/scss/layout.scss */
+#video_wrap {
+  margin-bottom: 2.333em;
+}
+
+/* line 1, ../../dev/scss/header.scss */
+#header {
+  overflow: hidden;
+  margin: 0 1% 3.833em;
+}
+
+/* line 6, ../../dev/scss/header.scss */
+.page_title {
+  display: inline-block;
+  vertical-align: middle;
+  width: 83%;
+}
+
+/* line 12, ../../dev/scss/header.scss */
+.social_list {
+  vertical-align: middle;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 17%;
+  line-height: 0;
+}
+
+/* line 21, ../../dev/scss/header.scss */
+.social_list_item {
+  margin-left: 7%;
+  width: 25%;
+  display: inline-block;
+}
+/* line 25, ../../dev/scss/header.scss */
+.social_list_item:first-child {
+  margin-left: 11%;
+}
+
+/* line 30, ../../dev/scss/header.scss */
+.social__link {
+  display: block;
+  width: 100%;
+}
+/* line 33, ../../dev/scss/header.scss */
+.social__link img {
+  width: 100%;
+}
+
+/* line 1, ../../dev/scss/playlist_tabs.scss */
+.playlist_tabs {
+  overflow: hidden;
+  margin-bottom: 2.667em;
+}
+
+/* line 6, ../../dev/scss/playlist_tabs.scss */
+.playlist_tabs_item {
+  width: 24%;
+  margin-left: 1%;
+  float: left;
+  text-align: center;
+}
+/* line 11, ../../dev/scss/playlist_tabs.scss */
+.playlist_tabs_item:first-child {
+  margin-left: 0.5%;
+}
+
+/* line 16, ../../dev/scss/playlist_tabs.scss */
+.playlist_image {
+  width: 100%;
+  height: 100px;
+}
+
+/* line 21, ../../dev/scss/playlist_tabs.scss */
+.playlist_title {
+  color: #003f7c;
+  font-size: 1.167em;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0.6em 0 0.2em;
+}
+
+/* line 30, ../../dev/scss/playlist_tabs.scss */
+.playlist_descr {
+  color: #5b5b57;
+  font-size: 1em;
+}
+
+/* line 1, ../../dev/scss/playlist_videos.scss */
+.playlist_videos {
+  overflow: hidden;
+  margin-bottom: 3.333em;
+}

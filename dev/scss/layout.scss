@@ -1,0 +1,30 @@
+body {
+	background: #fff;
+	font-size: 12px;
+	line-height: 14px;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#mainarea {
+	max-width: 1067px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	padding: 4.250em 98px 0;
+}
+
+#content_fone {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#content {
+	margin:0 1%;
+}
+
+#video_wrap {
+	margin-bottom: 2.333em;
+}

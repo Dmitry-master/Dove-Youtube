@@ -1,0 +1,39 @@
+/* line 1, ../../dev/scss/playlist_tabs.scss */
+.playlist_tabs {
+  overflow: hidden;
+  margin-bottom: 2.667em;
+}
+
+/* line 6, ../../dev/scss/playlist_tabs.scss */
+.playlist_tabs_item {
+  width: 24%;
+  margin-left: 1%;
+  float: left;
+  text-align: center;
+}
+/* line 11, ../../dev/scss/playlist_tabs.scss */
+.playlist_tabs_item:first-child {
+  margin-left: 0.5%;
+}
+
+/* line 16, ../../dev/scss/playlist_tabs.scss */
+.playlist_image {
+  width: 100%;
+  height: 100px;
+}
+
+/* line 21, ../../dev/scss/playlist_tabs.scss */
+.playlist_title {
+  color: #003f7c;
+  font-size: 1.167em;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0.6em 0 0.2em;
+}
+
+/* line 30, ../../dev/scss/playlist_tabs.scss */
+.playlist_descr {
+  color: #5b5b57;
+  font-size: 1em;
+}

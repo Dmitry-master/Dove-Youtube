@@ -1,0 +1,43 @@
+/* line 1, ../../dev/scss/header.scss */
+#header {
+  overflow: hidden;
+  margin: 0 1% 3.833em;
+}
+
+/* line 6, ../../dev/scss/header.scss */
+.page_title {
+  display: inline-block;
+  vertical-align: middle;
+  width: 83%;
+}
+
+/* line 12, ../../dev/scss/header.scss */
+.social_list {
+  vertical-align: middle;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 17%;
+  line-height: 0;
+}
+
+/* line 21, ../../dev/scss/header.scss */
+.social_list_item {
+  margin-left: 7%;
+  width: 25%;
+  display: inline-block;
+}
+/* line 25, ../../dev/scss/header.scss */
+.social_list_item:first-child {
+  margin-left: 11%;
+}
+
+/* line 30, ../../dev/scss/header.scss */
+.social__link {
+  display: block;
+  width: 100%;
+}
+/* line 33, ../../dev/scss/header.scss */
+.social__link img {
+  width: 100%;
+}
