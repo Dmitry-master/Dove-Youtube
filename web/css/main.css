@@ -81,6 +81,7 @@ body {
 /* line 28, ../../dev/scss/layout.scss */
 #video_wrap {
   margin-bottom: 2.333em;
+  width: 100%;
 }
 
 /* line 1, ../../dev/scss/header.scss */
@@ -148,10 +149,9 @@ body {
 /* line 16, ../../dev/scss/playlist_tabs.scss */
 .playlist_image {
   width: 100%;
-  height: 100px;
 }
 
-/* line 21, ../../dev/scss/playlist_tabs.scss */
+/* line 20, ../../dev/scss/playlist_tabs.scss */
 .playlist_title {
   color: #003f7c;
   font-size: 1.167em;
@@ -161,7 +161,7 @@ body {
   margin: 0.6em 0 0.2em;
 }
 
-/* line 30, ../../dev/scss/playlist_tabs.scss */
+/* line 29, ../../dev/scss/playlist_tabs.scss */
 .playlist_descr {
   color: #5b5b57;
   font-size: 1em;
@@ -170,5 +170,30 @@ body {
 /* line 1, ../../dev/scss/playlist_videos.scss */
 .playlist_videos {
   overflow: hidden;
-  margin-bottom: 3.333em;
+  margin-bottom: 2.8em;
+}
+
+/* line 6, ../../dev/scss/playlist_videos.scss */
+.playlist_videos_item {
+  float: left;
+  width: 32%;
+  margin-left: 2%;
+  text-align: center;
+}
+/* line 11, ../../dev/scss/playlist_videos.scss */
+.playlist_videos_item:first-child {
+  margin-left: 0;
+}
+
+/* line 16, ../../dev/scss/playlist_videos.scss */
+.video_sample {
+  width: 100%;
+}
+
+/* line 20, ../../dev/scss/playlist_videos.scss */
+.video_title {
+  color: #5b5b57;
+  font-size: 1.542em;
+  line-height: 1.1em;
+  margin-top: 0.6em;
 }

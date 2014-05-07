@@ -1,5 +1,30 @@
 /* line 1, ../../dev/scss/playlist_videos.scss */
 .playlist_videos {
   overflow: hidden;
-  margin-bottom: 3.333em;
+  margin-bottom: 2.8em;
+}
+
+/* line 6, ../../dev/scss/playlist_videos.scss */
+.playlist_videos_item {
+  float: left;
+  width: 32%;
+  margin-left: 2%;
+  text-align: center;
+}
+/* line 11, ../../dev/scss/playlist_videos.scss */
+.playlist_videos_item:first-child {
+  margin-left: 0;
+}
+
+/* line 16, ../../dev/scss/playlist_videos.scss */
+.video_sample {
+  width: 100%;
+}
+
+/* line 20, ../../dev/scss/playlist_videos.scss */
+.video_title {
+  color: #5b5b57;
+  font-size: 1.542em;
+  line-height: 1.1em;
+  margin-top: 0.6em;
 }

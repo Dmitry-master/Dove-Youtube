@@ -32,4 +32,5 @@ body {
 /* line 28, ../../dev/scss/layout.scss */
 #video_wrap {
   margin-bottom: 2.333em;
+  width: 100%;
 }
