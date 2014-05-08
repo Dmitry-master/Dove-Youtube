@@ -17,6 +17,7 @@ $(function() {
         channelId: doveChannel,
         playlistsConteiner: $playlistTabs,
         videosConteiner: $playlistVideos,
-        videoConteiner: $videoWrap
+        videoConteiner: $videoWrap,
+        googleApiKey: 'AIzaSyD7ls_UCYsiKHwjPFFjvrATd0LLXxUubLI'
     });
 });

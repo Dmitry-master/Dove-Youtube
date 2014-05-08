@@ -3,7 +3,7 @@ function Youtube(options) {
     this.playlistsConteiner = options.playlistsConteiner;
     this.videosConteiner = options.videosConteiner;
     this.videoConteiner = options.videoConteiner;
-    this.callback = options.callback;
+    this.googleApiKey = options.googleApiKey;
     this.activePlaylist = null;
     this.activeVideo = null;
 
@@ -59,7 +59,7 @@ Youtube.prototype.getPlaylists = function() {
         data: {
             part: 'snippet',
             channelId: this.channelId,
-            key: 'AIzaSyD7ls_UCYsiKHwjPFFjvrATd0LLXxUubLI'
+            key: this.googleApiKey
         },
         success: function (data) {
             deferred.resolve(data);
@@ -78,7 +78,7 @@ Youtube.prototype.getVideos = function(playlistId) {
         data: {
             part: 'snippet',
             playlistId: playlistId,
-            key: 'AIzaSyD7ls_UCYsiKHwjPFFjvrATd0LLXxUubLI'
+            key: this.googleApiKey
         },
         success: function (data) {
             deferred.resolve(data);
