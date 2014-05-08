@@ -1,15 +1,27 @@
-.playlist_tabs {
+.playlist_tabs_wrap {
 	overflow: hidden;
-	margin-bottom: 2.667em;
+	margin: 0 1% 2.667em 1%;
+	position: relative;
+}
+
+.playlist_tabs {
+	white-space: nowrap;
+	position: relative;
+	margin-left: -1%;
 }
 
 .playlist_tabs_item {
 	width: 24%;
 	margin-left: 1%;
-	float: left;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
 	text-align: center;
-	&:first-child {
-		margin-left: 0.5%;
+	cursor: pointer;
+	vertical-align: top;
+	white-space: nowrap;
+	figure {
+		white-space: normal;
 	}
 }
 

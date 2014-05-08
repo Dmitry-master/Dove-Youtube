@@ -15,29 +15,32 @@
 .social_list {
   vertical-align: middle;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
   width: 17%;
   line-height: 0;
+  *display: inline;
+  *zoom: 1;
+  *white-space: nowrap;
 }
 
-/* line 21, ../../dev/scss/header.scss */
+/* line 22, ../../dev/scss/header.scss */
 .social_list_item {
   margin-left: 7%;
   width: 25%;
   display: inline-block;
+  *zoom: 1;
+  *display: inline;
 }
-/* line 25, ../../dev/scss/header.scss */
+/* line 26, ../../dev/scss/header.scss */
 .social_list_item:first-child {
   margin-left: 11%;
 }
 
-/* line 30, ../../dev/scss/header.scss */
+/* line 33, ../../dev/scss/header.scss */
 .social__link {
   display: block;
   width: 100%;
 }
-/* line 33, ../../dev/scss/header.scss */
+/* line 36, ../../dev/scss/header.scss */
 .social__link img {
   width: 100%;
 }

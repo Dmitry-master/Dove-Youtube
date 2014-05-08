@@ -47,6 +47,88 @@ table {
   border-spacing: 0;
 }
 
+/* line 2, ../../dev/scss/global.scss */
+.slider_nav_prev,
+.slider_nav_next {
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  line-height: 100%;
+  text-align: center;
+  top: 0;
+}
+/* line 9, ../../dev/scss/global.scss */
+.slider_nav_prev i,
+.slider_nav_next i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* line 16, ../../dev/scss/global.scss */
+.slider_nav_next {
+  right: 0;
+}
+/* line 18, ../../dev/scss/global.scss */
+.slider_nav_next:hover {
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 0.65) 99%, rgba(0, 0, 0, 0.65) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(2%, rgba(0, 0, 0, 0)), color-stop(99%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0.65)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 0.65) 99%, rgba(0, 0, 0, 0.65) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 0.65) 99%, rgba(0, 0, 0, 0.65) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 0.65) 99%, rgba(0, 0, 0, 0.65) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 0.65) 99%, rgba(0, 0, 0, 0.65) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
+  /* IE6-9 */
+}
+/* line 29, ../../dev/scss/global.scss */
+.slider_nav_next i {
+  margin: -4px 0 0 -5px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 7.5px 0 7.5px 10px;
+  border-color: transparent transparent transparent #ffffff;
+  vertical-align: middle;
+}
+
+/* line 40, ../../dev/scss/global.scss */
+.slider_nav_prev {
+  left: 0;
+}
+/* line 42, ../../dev/scss/global.scss */
+.slider_nav_prev:hover {
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+  /* IE6-9 */
+}
+/* line 52, ../../dev/scss/global.scss */
+.slider_nav_prev i {
+  margin: -4px 0 0 -5px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 7.5px 10px 7.5px 0;
+  border-color: transparent #ffffff transparent transparent;
+  vertical-align: middle;
+}
+
 /* line 1, ../../dev/scss/layout.scss */
 body {
   background: #fff;
@@ -66,24 +148,45 @@ body {
 
 /* line 16, ../../dev/scss/layout.scss */
 #content_fone {
-  width: 100%;
+  height: 100%;
+  *height: auto;
+  *width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 }
 
-/* line 24, ../../dev/scss/layout.scss */
-#content {
-  margin: 0 1%;
-}
-
-/* line 28, ../../dev/scss/layout.scss */
+/* line 26, ../../dev/scss/layout.scss */
 #video_wrap {
   margin-bottom: 2.333em;
   width: 100%;
 }
 
+@media screen and (max-width: 1056px) {
+  /* line 32, ../../dev/scss/layout.scss */
+  body {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  /* line 37, ../../dev/scss/layout.scss */
+  #mainarea {
+    padding: 4.250em 0 0 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  /* line 43, ../../dev/scss/layout.scss */
+  body {
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  /* line 48, ../../dev/scss/layout.scss */
+  #mainarea {
+    padding: 4.250em 0 0 0;
+  }
+}
 /* line 1, ../../dev/scss/header.scss */
 #header {
   overflow: hidden;
@@ -101,57 +204,73 @@ body {
 .social_list {
   vertical-align: middle;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
   width: 17%;
   line-height: 0;
+  *display: inline;
+  *zoom: 1;
+  *white-space: nowrap;
 }
 
-/* line 21, ../../dev/scss/header.scss */
+/* line 22, ../../dev/scss/header.scss */
 .social_list_item {
   margin-left: 7%;
   width: 25%;
   display: inline-block;
+  *zoom: 1;
+  *display: inline;
 }
-/* line 25, ../../dev/scss/header.scss */
+/* line 26, ../../dev/scss/header.scss */
 .social_list_item:first-child {
   margin-left: 11%;
 }
 
-/* line 30, ../../dev/scss/header.scss */
+/* line 33, ../../dev/scss/header.scss */
 .social__link {
   display: block;
   width: 100%;
 }
-/* line 33, ../../dev/scss/header.scss */
+/* line 36, ../../dev/scss/header.scss */
 .social__link img {
   width: 100%;
 }
 
 /* line 1, ../../dev/scss/playlist_tabs.scss */
-.playlist_tabs {
+.playlist_tabs_wrap {
   overflow: hidden;
-  margin-bottom: 2.667em;
+  margin: 0 1% 2.667em 1%;
+  position: relative;
 }
 
-/* line 6, ../../dev/scss/playlist_tabs.scss */
+/* line 7, ../../dev/scss/playlist_tabs.scss */
+.playlist_tabs {
+  white-space: nowrap;
+  position: relative;
+  margin-left: -1%;
+}
+
+/* line 13, ../../dev/scss/playlist_tabs.scss */
 .playlist_tabs_item {
   width: 24%;
   margin-left: 1%;
-  float: left;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
   text-align: center;
+  cursor: pointer;
+  vertical-align: top;
+  white-space: nowrap;
 }
-/* line 11, ../../dev/scss/playlist_tabs.scss */
-.playlist_tabs_item:first-child {
-  margin-left: 0.5%;
+/* line 23, ../../dev/scss/playlist_tabs.scss */
+.playlist_tabs_item figure {
+  white-space: normal;
 }
 
-/* line 16, ../../dev/scss/playlist_tabs.scss */
+/* line 28, ../../dev/scss/playlist_tabs.scss */
 .playlist_image {
   width: 100%;
 }
 
-/* line 20, ../../dev/scss/playlist_tabs.scss */
+/* line 32, ../../dev/scss/playlist_tabs.scss */
 .playlist_title {
   color: #003f7c;
   font-size: 1.167em;
@@ -161,36 +280,49 @@ body {
   margin: 0.6em 0 0.2em;
 }
 
-/* line 29, ../../dev/scss/playlist_tabs.scss */
+/* line 41, ../../dev/scss/playlist_tabs.scss */
 .playlist_descr {
   color: #5b5b57;
   font-size: 1em;
 }
 
 /* line 1, ../../dev/scss/playlist_videos.scss */
-.playlist_videos {
+.playlist_videos_wrap {
   overflow: hidden;
   margin-bottom: 2.8em;
+  position: relative;
 }
 
-/* line 6, ../../dev/scss/playlist_videos.scss */
+/* line 7, ../../dev/scss/playlist_videos.scss */
+.playlist_videos {
+  white-space: nowrap;
+  position: relative;
+  margin-left: -1.3333%;
+}
+
+/* line 13, ../../dev/scss/playlist_videos.scss */
 .playlist_videos_item {
-  float: left;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
   width: 32%;
-  margin-left: 2%;
+  margin-left: 1.3333%;
   text-align: center;
+  cursor: pointer;
+  vertical-align: top;
+  white-space: nowrap;
 }
-/* line 11, ../../dev/scss/playlist_videos.scss */
-.playlist_videos_item:first-child {
-  margin-left: 0;
+/* line 23, ../../dev/scss/playlist_videos.scss */
+.playlist_videos_item figure {
+  white-space: normal;
 }
 
-/* line 16, ../../dev/scss/playlist_videos.scss */
+/* line 28, ../../dev/scss/playlist_videos.scss */
 .video_sample {
   width: 100%;
 }
 
-/* line 20, ../../dev/scss/playlist_videos.scss */
+/* line 32, ../../dev/scss/playlist_videos.scss */
 .video_title {
   color: #5b5b57;
   font-size: 1.542em;
