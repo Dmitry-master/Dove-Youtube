@@ -5,7 +5,7 @@ var templates = {
                     '<img src="' + data.snippet.thumbnails.medium.url + '" alt="' + data.snippet.title + '" class="playlist_image">' +
                     '<figcaption>' +
                         '<span class="playlist_title">' + data.snippet.title + '</span>' +
-                        '<!--<br><span class="playlist_descr">Selfie</span>-->' +
+                        '<br><span class="playlist_descr">' + data.snippet.description + '</span>' +
                     '</figcaption>' +
                 '</figure>' +
             '</li>';

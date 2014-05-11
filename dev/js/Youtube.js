@@ -51,18 +51,22 @@ Youtube.prototype.init = function () {
 };
 
 Youtube.prototype.getPlaylists = function() {
-    var deferred = new $.Deferred();
+    var self = this,
+        deferred = new $.Deferred();
 
     $.ajax({
         url: 'https://www.googleapis.com/youtube/v3/playlists',
         type: 'GET',
         data: {
             part: 'snippet',
-            channelId: this.channelId,
-            key: this.googleApiKey
+            channelId: self.channelId,
+            key: self.googleApiKey
         },
         success: function (data) {
-            deferred.resolve(data);
+            dataDeferred = self.checkThumbs(data);
+            dataDeferred.then(function(dataUpdated) {
+                deferred.resolve(dataUpdated);
+            });
         }
     });
 
@@ -149,3 +153,32 @@ Youtube.prototype.renderVideo = function() {
         .append( templates.video({url: this.activeVideo.snippet.resourceId.videoId}) );
 };
 
+Youtube.prototype.checkThumbs = function (playlists) {
+    var deferred = $.Deferred(),
+        defs = [];
+
+    for (var i = playlists.items.length - 1; i >= 0; i--) {
+        if(playlists.items[i].snippet.thumbnails.medium.url === 'https://i.ytimg.com/vi/default.jpg') {
+            defs.push( this.updateThumbByRelevance(playlists.items[i]) );
+        }
+    };
+
+    $.when.apply($, defs).then(function() {
+        deferred.resolve(playlists);
+    });
+
+    return deferred.promise();
+}
+
+Youtube.prototype.updateThumbByRelevance = function (playlistItem) {
+    var deferred = new $.Deferred();
+
+    this.getVideos(playlistItem.id).then(function(data) {
+        playlistItem.snippet.thumbnails.default.url = data.items[0].snippet.thumbnails.default.url;
+        playlistItem.snippet.thumbnails.high.url = data.items[0].snippet.thumbnails.high.url;
+        playlistItem.snippet.thumbnails.medium.url = data.items[0].snippet.thumbnails.medium.url;
+        deferred.resolve(playlistItem);
+    });
+
+    return deferred.promise();
+}
