@@ -22,9 +22,11 @@ var templates = {
         return '<object width="100%" height="100%">' +
                 '<param name="movie" value="https://www.youtube.com/v/' + data.url + '&fs=1"></param>' +
                 '<param name="allowFullScreen" value="true"></param>' +
+                '<param name="allownetworking" value="all"></param>' +
+                '<param name="allowscriptaccess" value="always"></param>' +
                 '<embed src="https://www.youtube.com/v/' + data.url + '&fs=1"' +
                        'type="application/x-shockwave-flash"' +
-                       'width="100%" height="100%"' +
+                       'width="100%" height="100%" allownetworking="all" allowScriptAccess="always"' +
                        'allowfullscreen="true"></embed>' +
             '</object>';
     }
